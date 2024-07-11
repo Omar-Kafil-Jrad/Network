@@ -1,6 +1,6 @@
 [TimeLoop]
-TEnd = 1.0e6
-DtInitial = 1.0e3
+DtInitial = 1 # [s]
+TEnd = 5 # [s]
 
 [Problem]
 EnableGravity = false # horizontal layer
@@ -10,7 +10,7 @@ OutputName = simplest_network
 
 [HTube.Problem]
 Name = HTube
-BoundaryPressure = 1.0e5
+BoundaryPressure = 13.0e4
 Delta = 0.01
 
 [Node.Problem]
@@ -35,11 +35,12 @@ Grading1 = 1
 
 
 [SpatialParams]
-Permeability = 1e-6 # m^2
+Permeability = 4.6e-10 # m^2
 Porosity = 0.4
 Swr = 0.05
 VanGenuchtenN = 4.7
 VanGenuchtenAlpha = 0.0037
+
 
 [Vtk]
 AddVelocity = 1
