@@ -1,0 +1,12 @@
+################################
+# Dune module information file #
+################################
+
+# Name of the module
+Module: Fluidics-network
+Version: 1
+Maintainer: omarjrad212@gmail.com
+# Required build dependencies
+Depends: dumux
+# Optional build dependencies
+#Suggests:

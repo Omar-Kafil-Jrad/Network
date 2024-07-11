@@ -1,0 +1,1 @@
+/home/omarjrad/dumux/Fluidics-network/simple-network/nodeinitialsolutioncc.txt

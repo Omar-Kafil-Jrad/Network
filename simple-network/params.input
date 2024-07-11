@@ -1,0 +1,45 @@
+[TimeLoop]
+TEnd = 1.0e6
+DtInitial = 1.0e3
+
+[Problem]
+EnableGravity = false # horizontal layer
+
+[Vtk]
+OutputName = simplest_network
+
+[HTube.Problem]
+Name = HTube
+BoundaryPressure = 1.0e5
+Delta = 0.01
+
+[Node.Problem]
+Name = Node
+
+[HTube.Grid]
+Verbosity = true
+Positions0 = 0.0 4.0
+Positions1 = -0.25 0.25
+Cells0 = 400
+Cells1 = 50
+Grading1 = 1
+
+
+[Node.Grid]
+Verbosity = true
+Positions0 = 4.0 4.5
+Positions1 = -0.75 0.75
+Cells0 = 50
+Cells1 = 150
+Grading1 = 1
+
+
+[SpatialParams]
+Permeability = 1e-6 # m^2
+Porosity = 0.4
+Swr = 0.05
+VanGenuchtenN = 4.7
+VanGenuchtenAlpha = 0.0037
+
+[Vtk]
+AddVelocity = 1
